@@ -1,0 +1,279 @@
+using System;
+
+namespace TEST
+{
+class Program
+{
+        static void Main()
+        {
+
+
+
+
+            // {                                                                                                    }
+            // {    This examples and tutorial was made by Muhammad S. RaniYah that published on Youtube channel    }
+            // {    Named  " KRD TECH ". Thanks  for  enrolling. Please  don't forget  to like  and  subscribe !    }
+            // {    Link of My YouTube Channel : https://www.youtube.com/MuhammadSRaniYah                           }
+            // {                                                                                                    }
+
+
+
+
+            /*  There are Three types of Arrays :
+
+    --------   1- Single Dimentional Array, which can have two main form:
+
+            *  Line Intialization Array with limit form : DATATYPE[] NAME = new DATATYPE [Length of array] {N1,N2,Nn};
+            Example: int[] Array1 = new int[5] {1,2,3,4,5};
+
+
+            int[] array1 = new int[3];
+            array1[0] = 2872;
+            array1[1]= 8272;
+            array1[2] = 89232;
+
+            Console.WriteLine(array1[2]);
+            Console.ReadLine();
+
+
+
+        *  Line Intialization Array with no-limit form : DATATYPE[] NAME = new DATATYPE [] {N1,N2,Nn};
+        Example: int[] Array2 = new int[] {1,2,3,4,5,N} N= infinity Numbers
+
+        *  Second Form is : DATATYPE[] NAME= new DATATYPE[Length of array];
+        Example : int[] Array3 = new int[3];
+        Array3[0]= 10;
+        Array3[1]= 20;
+        Array3[2]= 30;
+
+    -------    2- Multi-Dimention array, which can take two form:                                                           
+                                                                                                                    M1         M2       M3                                        
+        *  Line Intialization Array with limite form : DATATYPE[,] NAME = new DATATYPE [Length of M ,Length N ] {{N1,N2,N},{N1,N2,N},{N1,N2,N};
+        Example: 
+
+
+
+
+            int[,] Array1 = new int[,] { {231,22,22} , {32,22,343}, { 332, 322, 254 }, { 326, 225 ,2321}, { 32, 22, 34 } };
+            Console.WriteLine(Array1[3,2]);
+            Console.ReadLine();
+
+
+
+
+
+
+            *  Line Intialization Array with no-limite form : DATATYPE[,] NAME = new DATATYPE [,] {{N1,N2,N},{N1,N2,N}};
+            Example: int[,] Array1 = new int[,] {{1,2},{1,2}}
+
+            *  Second Form is : DATATYPE[,] NAME= new DATATYPE[Length of array1, Lenth of array2];
+            Example : int[,] Array3 = new int[1,2];
+            Array3[0,0]= 10;
+            Array3[0,1]= 20;
+            Array3[1,1]= 30;
+
+            int[,] Array2 = new int[3,3];
+            Array2[0, 2] = 23;
+            Array2[0, 0] = 291;
+            Array2[1, 2] = 238;
+            Console.WriteLine(Array2[1, 2]);
+            Console.ReadLine();
+
+
+             */
+
+
+            /*
+             
+    ------- 3- Jagged Array "Also called Array of Array" used to combine all array's into one array.
+           DATATYPE[][] NAME= new DATATYPE[Length of array][];
+
+
+           */ //Example:
+
+
+            /*
+            int[][] Array3 = new int[3][];
+            Array3[0] = new int[2] { 1, 2};
+            Array3[1] = new int[4] { 11, 21, 31, 41 };
+            Array3[2] = new int[5] { 10, 20, 30, 40, 50 };
+            Console.WriteLine(Array3[2][3]);
+            Console.ReadLine();
+            */
+
+
+
+
+
+            // Example 1
+
+
+            /*
+            string[] A = new string[3] {"Ahmad","Muhammad","Hiwa"};
+            int[] Age = new int[] {12,34,56};
+            Console.WriteLine("The {0}'s age is {1}",A[0],Age[0]);
+            Console.WriteLine("The {0}'s age is {1}",A[1],Age[1]);
+            Console.WriteLine("The {0}'s age is {1}",A[2],Age[2]);
+            Console.ReadLine();
+            */
+
+
+
+
+            // Example 2
+
+            /* 
+             
+            int[] Array3 = new int[3];
+            Array3[0] = 10;
+            Array3[1] = 20;
+            Array3[2] = 30;
+
+            Console.WriteLine(Array3[0]);
+            Console.ReadLine();
+
+            */
+
+
+
+
+
+            // Example 3
+
+            /*
+             
+            int[] Array3 = new int[3] ;
+            Console.WriteLine("Please enter the first number:");
+            Array3[0]  = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the second number:");
+            Array3[1] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the third number:");
+            Array3[2] = int.Parse(Console.ReadLine());
+            Console.WriteLine("Your Answer is:");
+            Console.WriteLine(Array3[0] + Array3[1]+Array3[2]);
+            Console.ReadLine();
+            
+            */
+
+
+
+            // Example 4
+
+
+            /*
+            Console.WriteLine("Please enter the first number:");
+            int X = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the second number:");
+            int Y = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the third number:");
+            int Z = int.Parse(Console.ReadLine());
+            // int B = X + Y;
+            int[,] Array3 = new int[,] { { X,X+Y+Z,4 }, { Y,2,3 },{ Z, 1, 1 } };
+            Console.WriteLine("Your Answer is:");
+            Console.WriteLine(Array3[0,1]);
+            Console.ReadLine();
+            */
+
+
+
+
+
+
+
+            //  Example 5
+
+            /*
+            int[] Array3 = new int[4];
+            Console.WriteLine("Please enter the first number:");
+            Array3[0] = int.Parse((Console.ReadLine()));
+            Console.WriteLine("Please enter the second number:");
+            Array3[1] = int.Parse((Console.ReadLine()));
+            Console.WriteLine("Please enter the third number:");
+            Array3[2] = int.Parse((Console.ReadLine()));
+            Array3[3] = Array3[0] + Array3[1] + Array3[2];
+            Console.WriteLine("The second number that you entered is: {0}", Array3[1]);
+            Console.WriteLine("The sum of all equals: "+ Array3[3]);
+            Console.WriteLine();
+            Console.ReadLine();
+            */
+
+
+
+
+            //  Example 6
+            /*
+
+            Start: // Addition
+
+
+
+
+                double[] Number1 = new double[2];
+                Number1[0] = double.Parse(Console.ReadLine());
+                if (Number1[0]>=double.MinValue && Number1[0]<=double.MaxValue )
+                {
+                    goto R;
+
+                } else{
+
+                    Console.WriteLine("Invailed");
+                    Console.ReadLine();
+                    goto Start;
+                }
+                R:
+                Console.Clear();
+                char Choose = char.Parse(Console.ReadLine());
+                Console.Clear();
+                Number1[1] = double.Parse(Console.ReadLine());
+
+                if (Choose == '+') {
+                    goto A;
+                }else 
+                if (Choose=='-') {
+                    goto B;
+                }
+                else
+                if (Choose == '*')
+                {
+                    goto C;
+                }
+                else
+                if (Choose == '/')
+                {
+                    goto D;
+                };
+
+                A:
+                Console.WriteLine("Your Result is:{1}{3}{2}={0}", Number1[0] + Number1[1], Number1[0], Number1[1], Choose);
+                Console.ReadLine();
+                Console.Clear();
+                goto Start;
+                B:
+
+                Console.WriteLine("Your Result is:{1}{3}{2}={0}", Number1[0] - Number1[1], Number1[0], Number1[1],Choose);
+                Console.ReadLine();
+                Console.Clear();
+                goto Start;
+
+                C:
+
+                Console.WriteLine("Your Result is:{1}{3}{2}={0}", Number1[0] * Number1[1], Number1[0], Number1[1], Choose);
+                Console.ReadLine();
+                Console.Clear();
+                goto Start;
+
+                D:
+
+                Console.WriteLine("Your Result is:{1}{3}{2}={0}", Number1[0] / Number1[1], Number1[0], Number1[1], Choose);
+                Console.ReadLine();
+                Console.Clear();
+                goto Start;
+
+
+
+
+                */
+        }
+
+    }
+}
